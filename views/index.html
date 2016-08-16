@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<select>
+			{% for temphotel in temphotels %}
+				<option>{{ temphotel.name }}</option>
+			{% endfor %}
+		</select>
+		<select>
+			{% for temprestaurant in temprestaurants %}
+				<option>{{ temprestaurant.name }}</option>
+			{% endfor %}
+		</select>
+		<select>
+			{% for tempactivity in tempactivities %}
+				<option>{{ tempactivity.name }}</option>
+			{% endfor %}
+		</select>
+	</body>
+</html>
